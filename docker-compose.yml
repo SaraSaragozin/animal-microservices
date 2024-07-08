@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  dog-service:
+    build: sarasaragozin/dog-service
+    ports:
+      - "3001:3001"
+
+  cat-service:
+    build: sarasaragozin/cat-service
+    ports:
+      - "3002:3002"
+
+  animal-fact-service:
+    build: sarasaragozin/animal-fact-service
+    ports:
+      - "3003:3003"
