@@ -13,5 +13,5 @@ services:
 
   assessment-service:
     image: sarasaragozin/animal-fact-service:latest
-    ports:
+    ports: 
       - "3003:3003"
