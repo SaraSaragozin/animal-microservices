@@ -10,5 +10,5 @@ app.get('/status/:code', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Cat Service listening at http://localhost:${port}`);
-});
+}); 
  

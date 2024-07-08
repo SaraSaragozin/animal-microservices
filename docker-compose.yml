@@ -2,16 +2,16 @@ version: '3.8'
 
 services:
   course-service:
-    image: sarasaragozin/course-service:latest
+    image: sarasaragozin/dog-service:latest
     ports:
       - "3001:3001"
 
   student-service:
-    image: sarasaragozin/student-service:latest
+    image: sarasaragozin/cat-service:latest
     ports:
       - "3002:3002"
 
   assessment-service:
-    image: sarasaragozin/assessment-service:latest
+    image: sarasaragozin/animal-fact-service:latest
     ports:
       - "3003:3003"
