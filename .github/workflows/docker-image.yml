@@ -23,23 +23,23 @@ jobs:
       - name: Log in to Docker Hub
         run: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 
-      - name: Build and push course-service
+      - name: Build and push cat-service
         uses: docker/build-push-action@v2
         with:
-          context: ./course-service
+          context: ./cat-service
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/course-service:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/cat-service:latest
 
-      - name: Build and push student-service
+      - name: Build and push dog-service
         uses: docker/build-push-action@v2
         with:
-          context: ./student-service
+          context: ./dog-service
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/student-service:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/dog-service:latest
 
-      - name: Build and push assessment-service
+      - name: Build and push animal-fact-service
         uses: docker/build-push-action@v2
         with:
-          context: ./assessment-service
+          context: ./animal-fact-service
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/assessment-service:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/animal-fact-service:latest
