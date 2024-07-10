@@ -2,7 +2,7 @@
 
 This repository contains a set of microservices for managing information related to animals, specifically focusing on dogs and cats.
 
-This repository was developed by students Saragozin Sara and Salguero Nexar.
+This repository was developed by student Saragozin Sara.
 
 ## Services
 
